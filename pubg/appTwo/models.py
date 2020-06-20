@@ -1,0 +1,28 @@
+from django.db import models
+from django import forms
+# Create your models here.
+
+'''class Topic(models.Model):
+    top_name = models.CharField(max_length=264,unique=True)
+
+    def __str__(self):
+        return self.top_name
+
+class Webpage(models.Model):
+    topic = models.ForeignKey(Topic,on_delete=models.PROTECT)
+    name = models.CharField(max_length=264,unique=True)
+    URL = models.URLField(unique=True)
+
+    def __str__(self):
+        return self.name
+class AccessRecord(models.Model):
+    name = models.ForeignKey(Webpage,on_delete=models.PROTECT)
+    date = models.DateField()
+    def __str__(self):
+        return str(self.date)
+# '''
+# class Person(models.Model):
+#     name = models.CharField(max_length=130)
+#     email = models.EmailField(blank=True)
+#     job_title = models.CharField(max_length=30, blank=True)
+#     bio = models.TextField(blank=True)

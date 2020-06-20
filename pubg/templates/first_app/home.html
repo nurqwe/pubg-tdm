@@ -1,0 +1,353 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pubg tournament</title>
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="shortcut icon" type="image/png" href="/favicon.png">
+	<link rel="stylesheet" href="{% static '/css/index.css' %}" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body>
+	<nav id="mainNav">
+		<div class="nav-content">
+			<ul>
+				<li><a href="#secAbout" class="smooth_scroll">About</a></li>
+				<li><a href="#secGuide" class="smooth_scroll">Guidlines</a></li>
+				<li><a href="#secSchedule" class="smooth_scroll">Schedule</a></li>
+				<li><a href="#secPoint" class="smooth_scroll">Point Table</a></li>
+				<li><a href="#secPrize" class="smooth_scroll">Prize</a></li>
+				<li><a href="#secRegister" class="smooth_scroll">Register</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<section id="secHero">
+		<div class="hero-content">
+			<h1>PUBG Mobile Tournament</h1>
+			<a href="http://127.0.0.1:8000/register"><button class="but-register">Register</button></a>
+		</div>
+	</section>
+	<section id="secAnnounce">
+		<div class="announce-content">
+			<div class="announce-head" style="width:50%;">Announcement<br /><marquee>*Important notice will be updated here.</marquee></div>
+			<p class="announce-text">Tournament date released! <a href="#secSchedule">Schedule is here.</a></p>
+		</div>
+	</section>
+  {% block body_block %}
+	<section id="secGuide" class="sec-container-light">
+		<div class="sec-content">
+			<h2>Guidlines</h2>
+			<p>Total number of squad joining the match will be 20 only. First of all each team will play 5 TDM matches. 4 teams will be selected for Playoff having the highest points. 1st, 2nd, 3rd and 4th positions will be given in accordance with their points. In the Playoff round the teams with 1st and 2nd rank will play a match (Qualifier 1). The winner will be the first finalist and the losing team will play Qualifier 2. Again the teams with 3rd and 4th position will play a match (Eliminator). The winner will go to the Qualifier 2 and the loosing team will be disqualified. In Qualifier 2 the winner will be the 2nd finalist and the losing team will be disqualified. And lastly the winner of the final match (1st), runner up of the final match (2nd) and runner up of Qualifier 2 (3rd) will be rewarded. </p>
+			<p> <a href="#secPrize">Click here for the Prize table</a></p>
+    </div>
+			<h4>Playoff Format</h4>
+			<img src="{% static '/images/format.jpeg' %}" width="100%" margin-left="20px" alt="Playoff format"></img>
+		<div class="sec-content">
+			<h2>Rules & Regulations</h2>
+			<p>
+				<strong>1. </strong>Only TDM match will be played and no other maps.<br />
+				<strong>2. </strong>Players with level less than 30 are not allowed to play.<br />
+				<strong>3. </strong>Player cannot use any types of third party apps.<br />
+				<strong>4. </strong>If players get disqualified then cannot join again.
+
+			</p>
+		</div>
+	</section>
+		<section id="secAbout" class="sec-container-dark">
+		<div class="sec-content">
+			<h2>About</h2>
+			<img id="imgAbout" src="{% static '/images/pubg_car.png' %}" alt="PUBG Car">
+			<p>PUBG MOBILE TDM TOURNAMENT is a tournament exclusively for TDM players featuring a total prize pool of 2,000 INR. Play to win and play for fun! A competition of both skills and popularity! So what are you waiting for? It's a squad tournament, just go and register!</p>
+		</div>
+	</section>
+	<section id="secSchedule" class="sec-container-dark">
+		<div class="sec-content">
+			<h2>Schedule</h2>
+			<p>PUBG MOBILE TDM TOURNAMENT will span on 25th Jun, 2020. See you on the BATTLEGROUND!</p>
+			<div class="tab-container">
+				<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Activity</th>
+      <th scope="col">Start</th>
+      <th scope="col">End</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+			<td>Registraion</td>
+			<td>20th Jun</td>
+			<td>24th Jun</td>
+    </tr>
+    <tr>
+			<td>Match</td>
+			<td>25th Jun</td>
+			<td>25th Jun</td>
+    </tr>
+  </tbody>
+</table>
+			</div>
+		</div>
+	</section>
+	<section id="secPoint" class="sec-container-dark">
+		<div class="sec-content">
+			<h2>Point Table</h2>
+			<p>The winning team will get 2 points.</p>
+			<p>In case two or more teams have the same points the position will be considered according to their kills.</p>
+
+			<div class="tab-container">
+				<table class="table">
+	  <thead class="thead-light">
+	    <tr>
+			  <th scope="col">Rank</th>
+	      <th scope="col">Team Name</th>
+	      <th scope="col">Points</th>
+	      <th scope="col">Total Kills</th>
+	    </tr>
+	  </thead>
+		<thead class="thead-dark">
+	    <tr>
+				<th scope="col">1</th>
+	      <th scope="col">Buduram</th>
+	      <th scope="col">10</th>
+	      <th scope="col">451</th>
+	    </tr>
+	  </thead>
+		<thead class="thead-dark">
+			<tr>
+				<th scope="col">2</th>
+				<th scope="col">-</th>
+				<th scope="col">-</th>
+				<th scope="col">0</th>
+			</tr>
+		</thead>
+		<thead class="thead-dark">
+			<tr>
+				<th scope="col">3</th>
+				<th scope="col">-</th>
+				<th scope="col">-</th>
+				<th scope="col">0</th>
+			</tr>
+		</thead>
+		<thead class="thead-dark">
+			<tr>
+				<th scope="col">4</th>
+				<th scope="col">-</th>
+				<th scope="col">-</th>
+				<th scope="col">0</th>
+			</tr>
+		</thead>
+
+	  <tbody>
+
+			<tr>
+			 <td>5</td>
+			 <td>-</td>
+			 <td>-</td>
+			 <td>0</td>
+		 </tr>
+		 <tr>
+			<td>6</td>
+			<td>-</td>
+			<td>-</td>
+			<td>0</td>
+		</tr>
+		<tr>
+		 <td>7</td>
+		 <td>-</td>
+		 <td>-</td>
+		 <td>0</td>
+	 </tr>
+	 <tr>
+		<td>8</td>
+		<td>-</td>
+		<td>-</td>
+		<td>0</td>
+	</tr>
+	<tr>
+	 <td>9</td>
+	 <td>-</td>
+	 <td>-</td>
+	 <td>0</td>
+ </tr>
+ <tr>
+	<td>10</td>
+	<td>-</td>
+	<td>-</td>
+	<td>0</td>
+</tr>
+<tr>
+ <td>11</td>
+ <td>-</td>
+ <td>-</td>
+ <td>0</td>
+</tr>
+<tr>
+<td>12</td>
+<td>-</td>
+<td>-</td>
+<td>0</td>
+</tr>
+<tr>
+<td>13</td>
+<td>-</td>
+<td>-</td>
+<td>0</td>
+</tr>
+<tr>
+<td>14</td>
+<td>-</td>
+<td>-</td>
+<td>0</td>
+</tr>
+<tr>
+<td>15</td>
+<td>-</td>
+<td>-</td>
+<td>0</td>
+</tr>
+<tr>
+	<td>16</td>
+	<td>-</td>
+	<td>-</td>
+	<td>0</td>
+</tr>
+<tr>
+ <td>17</td>
+ <td>-</td>
+ <td>-</td>
+ <td>0</td>
+</tr>
+<tr>
+<td>18</td>
+<td>-</td>
+<td>-</td>
+<td>0</td>
+</tr>
+<tr>
+<td>19</td>
+<td>-</td>
+<td>-</td>
+<td>0</td>
+</tr>
+<tr>
+<td>20</td>
+<td>-</td>
+<td>-</td>
+<td>0</td>
+</tr>
+
+	  </tbody>
+	</table>
+			</div>
+		</div>
+	</section>
+
+
+
+		</div>
+	</section>
+	<section id="secPrize" class="sec-container-dark">
+		<div class="sec-content">
+			<h2>Prize Pool</h2>
+			<p>PUBG MOBILE TDM TOURNAMENT is featuring a prize pool of 2,000 INR.</p>
+			<p><b>Note:</b> The highest kills prize will be given to his/her team captain's account number.</p>
+			<section id="secSchedule" class="sec-container-dark">
+				<div class="sec-content">
+				<div class="tab-container">
+						<table class="tab-schedule">
+							<tr>
+								<th>Position</th>
+								<th>Prize</th>
+							</tr>
+							<tr>
+								<td>Final Winner</td>
+								<td>1,000</td>
+							</tr>
+							<tr>
+								<td>Final runner up</td>
+								<td>500</td>
+							</tr>
+							<tr>
+								<td>Qualifier 2 runner up</td>
+								<td>200</td>
+							</tr>
+							<tr>
+								<td>Highest Kills (Man of the tournament)</td>
+								<td>100</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<img style="width: 100%; margin-top: 0px; margin-bottom: 20px;" src="{% static '/images/wall.jpg' %}" alt="Prize Pool"></img>
+
+			</section>
+			<h2>Join fee structure </h1>
+				<p>Each squad should have 4 players only.</p>
+				<section id="secSchedule" class="sec-container-dark">
+					<div class="sec-content">
+					<div class="tab-container">
+							<table class="tab-schedules">
+								<tr>
+									<th>TEAM</th>
+									<th>Join fee</th>
+								</tr>
+								<tr>
+									<td>Squad</td>
+									<td>Rs. 100</td>
+								</tr>
+								<tr>
+									<td>Duo</td>
+									<td>Currently not available</td>
+								</tr>
+								<tr>
+									<td>Solo</td>
+									<td>Currently not available</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</section>
+				<p><b>Note:</b> Only TDM math will be played and no other maps. Make sure you have read the <a href="#secGuide">Guidlines.</a></p>
+				<h2><a href="#secRegister" class="smooth_scroll">Join Here </a></h1>
+
+		</div>
+	</section>
+
+	{% endblock %}
+
+	<section id="secRegister" class="sec-container-light">
+	<div class="sec-content">
+			<h2>Contact us</h2>
+			<p>:)</p>
+
+		</div>
+
+
+	</section>
+	<section id="secPattern">
+		<div class="pattern-content">&nbsp;</div>
+	</section>
+	<footer>
+		<div class="sec-content">
+			<div class="footer-social">
+				<a href="javascript:void(0)" target="_blank"><img src="{% static '/images/social/twitter.png' %}" alt="Twitter"></a>
+				<a href="javascript:void(0)" target="_blank"><img src="{% static '/images/social/facebook.png' %}" alt="Facebook"></a>
+				<a href="javascript:void(0)" target="_blank"><img src="{% static '/images/social/instagram.png' %}" alt="Instagram"></a>
+				<a href="javascript:void(0)" target="_blank"><img src="{% static '/images/social/youtube.png' %}" alt="Youtube"></a>
+			</div>
+			<div class="footer-copyright">
+				<p>&copy; Nur Mohammad</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="{% static 'js/validation.js' %}"></script>
+</body>
+</html>

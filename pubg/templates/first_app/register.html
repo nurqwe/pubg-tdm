@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pubg tournament</title>
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="shortcut icon" type="image/png" href="/favicon.png">
+	<link rel="stylesheet" href="{% static '/css/index.css' %}" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body>
+	<nav id="mainNav">
+		<div class="nav-content">
+			<ul>
+				<li><a href="http://127.0.0.1:8000/" class="smooth_scroll">Home</a></li>
+				<li><a href="http://127.0.0.1:8000/#secGuide" class="smooth_scroll">Guidlines</a></li>
+				<li><a href="http://127.0.0.1:8000/#secSchedule" class="smooth_scroll">Schedule</a></li>
+				<li><a href="http://127.0.0.1:8000/#secPoint" class="smooth_scroll">Point Table</a></li>
+				<li><a href="http://127.0.0.1:8000/#secPrize" class="smooth_scroll">Prize</a></li>
+				<li><a href="http://127.0.0.1:8000/register/#secRegisterMain" class="smooth_scroll">Register</a></li>
+					</ul>
+		</div>
+	</nav>
+
+    <section id="#secRegisterMain" class="sec-container-light">
+  		<div class="sec-content">
+  			<h2>Register Procedure:</h2>
+        <p>You will be given a Google form for register your squad. First of all pay your join fees to our <a href="#secAccount">account number</a> then take a screenshot of it. You need to submit your screenshot with your squad details.</p>
+        <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdh5KZlmSo-llDzCBtyNZAexOrEV5WTscbKuZg9JbvbRrdL5g/viewform">Register your squad here</a></p>
+        </div>
+	</section>
+	<section id="secAnnounce">
+		<div class="announce-content">
+			<div class="announce-head" style="width:50%;">Announcement<br /><marquee>*Important notice will be updated here.</marquee></div>
+			<p class="announce-text">Tournament date released! <a href="http://127.0.0.1:8000/#secSchedule">Schedule is here.</a></p>
+		</div>
+	</section>
+
+  <section id="secAccount" class="sec-container-light">
+  <div class="sec-content">
+      <h2>Our account details.</h2>
+      <p><strong>PayTM:</strong> </p>
+      <p><strong>Gpay:</strong> </p>
+      <p><strong>PhonePe:</strong> </p>
+
+    </div>
+
+
+  </section>
+  <section id="secPattern">
+    <div class="pattern-content">&nbsp;</div>
+  </section>
+  <footer>
+    <div class="sec-content">
+      <div class="footer-social">
+        <a href="javascript:void(0)" target="_blank"><img src="{% static '/images/social/twitter.png' %}" alt="Twitter"></a>
+        <a href="javascript:void(0)" target="_blank"><img src="{% static '/images/social/facebook.png' %}" alt="Facebook"></a>
+        <a href="javascript:void(0)" target="_blank"><img src="{% static '/images/social/instagram.png' %}" alt="Instagram"></a>
+        <a href="javascript:void(0)" target="_blank"><img src="{% static '/images/social/youtube.png' %}" alt="Youtube"></a>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; Nur Mohammad</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{% static 'js/validation.js' %}"></script>
+</body>
+</html>
